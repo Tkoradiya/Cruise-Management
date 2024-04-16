@@ -1,0 +1,128 @@
+/* ContactUs.css */
+
+.contact-us-container {
+  display: flex;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  width: 50%;
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.google-map {
+  flex: 1;
+}
+.form-group {
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox for label-input alignment */
+  flex-direction: column; /* Stack label and input vertically */
+  align-items: flex-start; /* Align items to the start (left side) */
+}
+
+.form-group label {
+  margin-bottom: 5px; /* Add some space between label and input */
+}
+
+.contact-input {
+  width: 100%; /* Make input field take full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-input::placeholder {
+  color: #999;
+}
+
+.submit-button {
+  width: 100%; /* Make button take full width */
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+.weather-data {
+  width: 50%;
+}
+
+.weather-day {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.weather-day h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.weather-day p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .weather-day {
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  .weather-day h3 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us-container {
+    display: block;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+  .weather-data {
+    width: 50%;
+  }
+  .form-group {
+    width: 90%
+  }
+  .submit-button {
+    width: 90%
+  }
+}

@@ -1,0 +1,29 @@
+.booking-details {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.booking-header {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.booking-cell {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-table tbody tr:hover {
+  background-color: #f2f2f2;
+}

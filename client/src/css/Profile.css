@@ -1,0 +1,71 @@
+/* ProfilePage.css */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-details {
+    text-align: center;
+    width: 100%; /* Ensure form takes full width */
+    max-width: 400px; /* Limit form width for better readability */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for label-input alignment */
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: flex-start; /* Align items to the start (left side) */
+  }
+  
+  .form-group label {
+    margin-bottom: 5px; /* Add some space between label and input */
+  }
+  
+  .profile-input {
+    width: 100%; /* Make input field take full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .profile-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .profile-input::placeholder {
+    color: #999;
+  }
+  
+  .submit-button {
+    width: 100%; /* Make button take full width */
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  

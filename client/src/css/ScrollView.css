@@ -1,0 +1,43 @@
+.scroll-container {
+  position: relative;
+  margin: 20px
+}
+
+.scroll-view {
+    max-width: 100%; /* Default maximum width */
+    overflow-x: hidden; /* Hide browser's default horizontal scrollbar */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Prevent content from wrapping */
+  }
+  
+  .scroll-content {
+    display: flex; /* Ensure items are displayed horizontally */
+    gap: 10px; /* Add gap between items */
+    padding: 10px; /* Add padding to the content */
+  }
+  
+  .item {
+    min-width: 100px; /* Set minimum width for items */
+    flex: 0 0 auto; /* Ensure items don't grow or shrink */
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .scroll-indicator {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .left {
+    left: 5px;
+  }
+  
+  .right {
+    right: 5px;
+  }
+  
+  

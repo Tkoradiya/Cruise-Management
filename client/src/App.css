@@ -1,0 +1,13 @@
+/* MainSection.css */
+main {
+  padding: 20px;
+}
+
+.new-cruises,
+.available-cruises {
+  margin-bottom: 40px;
+  overflow-x: scroll;
+}
+.cardTitle {
+  margin: 1rem;
+}

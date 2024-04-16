@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px; /* Add padding to the menu items */
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: transform 0.4s ease;
+}
+
+.show {
+  display: block;
+}
+
+.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open:nth-child(2) {
+  opacity: 0;
+}
+
+.open:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .header {
+    width: 95.5vw;
+  }
+  .logo {
+    font-size: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; /* Add padding to the menu items */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+
+  nav ul li a:hover {
+    background-color: #555; /* Change background color on hover */
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  nav.show ul {
+    display: flex;
+  }
+  .header-login-button { 
+    margin-left: 0.5rem;
+  }
+}
+
+.content-below-header {
+  margin-top: 40px;
+}
+.header-login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-login-button:hover {
+  background-color: #0056b3;
+}
