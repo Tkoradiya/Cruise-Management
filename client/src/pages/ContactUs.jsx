@@ -14,9 +14,9 @@ const ContactUs = () => {
       const options = {
         method: "GET",
         headers: {
-          'X-RapidAPI-Key': '96c25093ffmsha2467d4680ea6acp14851bjsnaa39cb4f0cd3',
+          'X-RapidAPI-Key': 'e26ca4a144msh363fb4281e0da20p19f386jsnd61c4901dfb9',
           'X-RapidAPI-Host': 'easy-weather1.p.rapidapi.com'
-        },
+        }
       };
 
       const params = new URLSearchParams({
